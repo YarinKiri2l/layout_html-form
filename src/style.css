@@ -1,1 +1,12 @@
-/* styles go here */
+fieldset {
+  margin-bottom: 20px;
+}
+
+.rows {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+label {
+  margin-bottom: 5px;
+}
