@@ -1,10 +1,7 @@
-fieldset {
-  margin-bottom: 20px;
-}
-
 .rows {
   display: flex;
   flex-flow: column wrap;
+  margin-bottom: 20px;
 }
 
 label {
