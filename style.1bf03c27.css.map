@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.css"],"names":[],"mappings":"AAAA,MACE,YAAa,CACb,qBAAsB,CACtB,kBACF,CAEA,cACE,iBACF","file":"style.1bf03c27.css","sourceRoot":"../src","sourcesContent":[".rows {\n  display: flex;\n  flex-flow: column wrap;\n  margin-bottom: 20px;\n}\n\n.input--forms {\n  margin-bottom: 5px;\n}\n"]}
