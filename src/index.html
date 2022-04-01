@@ -16,7 +16,7 @@
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
       <fieldset class="rows">
         <legend> Personal information</legend>
-        <label >
+        <label class="input--forms" >
         Surname:
           <input
             type="text"
@@ -25,28 +25,28 @@
             required
           >
         </label>
-        <label for="name" >Name:
+        <label class="input--forms" for="name" >Name:
           <input
-        type="text"
-        name="name"
-        autocomplete="off"
-        required >
-        </label>
-        <label>
-        How old are you?
-          <input
-        type="number"
-        name="age"
-
-        value="12"
-        min="1"
-        max="100"
+            type="text"
+            name="name"
+            autocomplete="off"
+            required
           >
         </label>
-        <label>
+        <label class="input--forms">
+        How old are you?
+          <input
+            type="number"
+            name="age"
+            value="12"
+            min="1"
+            max="100"
+          >
+        </label>
+        <label class="input--forms">
         Full name of birth: <input type="date"  name="dateOfBirth">
         </label>
-        <label>
+        <label class="input--forms">
         I accept the term of the agreement:
           <input
             type="checkbox"
@@ -58,14 +58,14 @@
 
       <fieldset class="rows" >
         <legend>Registration</legend>
-        <label>E-mail:
+        <label class="input--forms">E-mail:
           <input
             type="email"
             name="email"
             placeholder="example@mail.com"
           >
         </label>
-        <label>Password:
+        <label class="input--forms">Password:
           <input
             type="password"
             name="password"
@@ -78,37 +78,36 @@
 
       <fieldset class="rows" >
         <legend>An interesting fact about you!</legend>
-        <label for="cats_form" >
-        Do you like cats?
-          <label>
+        <div class="input--forms">Do you like cats?
+          <label class="input--forms">
+            <input
+              type="radio"
+              name="cats"
+              value="true"
+            >Yes
           </label>
-          <input
-            type="radio"
-            name="cats"
-            value="true"
-          >Yes
-        </label>
-        <label>
-          <input
-            type="radio"
-            name="cats"
-            value="false"
-          >No
-        </label>
-        <label>
+          <label class="input--forms">
+            <input
+              type="radio"
+              name="cats"
+              value="false"
+            >No
+          </label>
+        </div>
+        <label class="input--forms">
         What is you favorite color?
           <input
             type="color"
             name="color"
           >
         </label>
-        <label>
+        <label class="input--forms">
         What time do you go to bed?
           <input
-          type="time"
+            type="time"
           >
         </label>
-        <label>
+        <label class="input--forms">
         What are your favorite brand of cars?
           <select multiple name="cars">
             <option value="BMW" >BMW</option>
@@ -116,7 +115,7 @@
             <option value="LADA" >LADA</option>
           </select>
         </label>
-        <label>
+        <label class="input--forms">
         How do you rate our work?
           <input
             type="range"
@@ -126,13 +125,13 @@
 
       <fieldset class="rows" >
         <legend>Additional info: </legend>
-        <label>
+        <label class="input--forms">
         Comments:
           <input
             type="comments"
           >
         </label>
-        <label>
+        <label class="input--forms">
         Would you recommend us?
           <select name="recommend">
             <option value="yes" >yes</option>
@@ -140,13 +139,7 @@
           </select>
         </label>
       </fieldset>
-      <label>
-        <input
-          type="submit"
-          value="Submit"
-          name="submit"
-        >
-      </label>
+      <button type="submit">Submit</button>
     </form>
   </body>
 </html>
